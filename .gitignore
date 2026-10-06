@@ -1,0 +1,11 @@
+# Local screenshot tooling, browser profiles, caches and intermediate renders.
+/dist/store-assets/work/
+
+# Original screenshots used as references.
+/dist/Screenshot*.png
+
+# Local dependencies and operating-system metadata.
+node_modules/
+.DS_Store
+Thumbs.db
+Desktop.ini

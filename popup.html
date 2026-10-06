@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ViewBlock</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><img src="icons/48.png" width="34" height="34" alt=""><div><h1>ViewBlock</h1><p>Ваша страница. Ваш выбор.</p></div><span class="version">1.5.0</span></header>
+  <main>
+    <div class="site"><span class="eyebrow">НА ЭТОМ САЙТЕ</span><strong id="host">Загрузка…</strong></div>
+    <div class="mode-options" role="group" aria-label="Режим отображения">
+      <button id="pick" class="mode-card" aria-pressed="false" aria-describedby="keep-description keep-count" disabled><span class="card-top"><span class="mode-symbol" aria-hidden="true">▣</span><span class="mode-check" aria-hidden="true">✓</span></span><strong>Оставить</strong><span id="keep-description" class="card-description">Только выбранные блоки</span><span id="keep-count" class="card-count">Не настроено</span></button>
+      <button id="remove" class="mode-card" aria-pressed="false" aria-describedby="hide-description hide-count" disabled><span class="card-top"><span class="mode-symbol" aria-hidden="true">▤</span><span class="mode-check" aria-hidden="true">✓</span></span><strong>Убрать</strong><span id="hide-description" class="card-description">Скрыть выбранные блоки</span><span id="hide-count" class="card-count">Не настроено</span></button>
+    </div>
+    <p class="mode-hint">В каждом режиме сохраняется свой выбор.</p>
+    <section class="status-card" aria-live="polite"><span id="lamp" class="lamp"></span><div><h2 id="status">Проверяем страницу</h2><p id="detail">Настройки появятся здесь.</p></div></section>
+    <button id="edit" class="primary" disabled><span id="edit-label">Выбрать блоки</span><span aria-hidden="true">↗</span></button>
+    <div class="quick-actions">
+      <button id="helper-toggle" class="secondary" disabled>Показать помощник</button>
+      <button id="toggle" class="secondary" disabled>Показать полную страницу</button>
+    </div>
+    <p id="error" role="alert" hidden></p>
+    <div class="reset-area">
+      <button id="forget" class="text-button" disabled>Удалить все настройки сайта</button>
+      <div id="reset-confirm" class="reset-confirm" hidden>
+        <p>Удалить выбор в обоих режимах?</p><span>Страница снова будет видна целиком.</span>
+        <div><button id="forget-cancel" class="secondary">Отмена</button><button id="forget-confirm" class="danger">Удалить</button></div>
+      </div>
+    </div>
+  </main>
+  <footer>Настройки хранятся только на вашем устройстве.</footer>
+  <script src="core.js"></script><script src="popup.js"></script>
+</body></html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ViewBlock · тестовая почта</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f4f0;color:#23372e;font:15px/1.5 system-ui,sans-serif}header{background:#143d30;color:white;padding:20px 34px;display:flex;justify-content:space-between;align-items:center}header strong{font-size:22px;letter-spacing:-.7px}header span{font-size:12px;color:#bed2c5}.layout{display:flex;gap:18px;padding:24px;align-items:stretch}nav{width:200px;flex-shrink:0;background:white;padding:22px;border-radius:14px}nav h2{font-size:13px;margin:22px 0 12px;color:#839488}nav a{display:block;color:#355345;text-decoration:none;padding:10px;border-radius:7px}nav a:first-of-type{background:#e8f2e5}button{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:10px 15px;background:#cfeb86;color:#243c2b}main{min-width:0;flex:1}.banner{padding:20px;background:#f7e2bd;border:1px dashed #c3a879;border-radius:12px;margin-bottom:18px}.toolbar{display:flex;gap:10px;background:#fff;padding:16px;border-radius:12px;margin-bottom:18px}input{font:inherit;border:1px solid #d4e0d6;padding:9px 12px;border-radius:7px;min-width:0;flex:1}.mail-list{background:white;border-radius:14px;overflow:hidden}.mail-row{display:flex;gap:14px;padding:22px;border-bottom:1px solid #eef1ed}.avatar{border-radius:50%;width:35px;height:35px;display:grid;place-items:center;background:#dae8dc;flex-shrink:0}.mail-row strong{display:block;font-size:14px}.mail-row p{color:#7a897f;font-size:13px;margin:3px 0}.mail-row time{margin-left:auto;color:#9aa59f;font-size:11px;white-space:nowrap}.test-button{margin:18px}aside{width:210px;flex-shrink:0;border-radius:12px;padding:25px;background:#efd9d2}aside b{display:block;font-size:28px;margin:22px 0}aside small{letter-spacing:2px;font-size:10px}footer{color:#778f80;padding:0 24px 24px;font-size:12px}.hidden-by-site{visibility:hidden}.route-note{font-size:11px;color:#6a7f70;padding:12px}dialog{border:1px solid #ddd;border-radius:12px;padding:30px}
+</style></head><body>
+<header id="topbar"><strong>Почта / демонстрация</strong><span>ViewBlock · оставьте нужные области</span></header>
+<div class="layout" id="layout">
+<nav id="folders" aria-label="Папки"><button type="button" id="compose">Написать</button><h2>МОЯ ПОЧТА</h2><a href="#inbox">Входящие</a><a href="#sent">Отправленные</a><a href="#drafts">Черновики</a><h2>ПРОЕКТЫ</h2><a href="#work">Работа</a><a href="#personal">Личное</a></nav>
+<main id="workspace"><section id="top-ad" class="banner">РЕКЛАМА · этот блок можно скрыть, выбрав только содержимое ниже.</section>
+<section id="search-tools" class="toolbar"><input id="search" aria-label="Поиск писем" placeholder="Поиск писем"><button type="button" id="refresh">Обновить</button></section>
+<section id="messages" class="mail-list" aria-label="Список писем">
+<div class="mail-row"><span class="avatar">А</span><div><strong>Алексей · планы на неделю</strong><p>Обсудим детали проекта завтра утром.</p></div><time>10:42</time></div>
+<div class="mail-row"><span class="avatar">М</span><div><strong>Мария · готов новый макет</strong><p>Добавила варианты и комментарии.</p></div><time>09:18</time></div>
+<div class="mail-row"><span class="avatar">К</span><div><strong>Команда · встреча в пятницу</strong><p>Ссылка и повестка во вложении.</p></div><time>Вчера</time></div>
+<button type="button" id="counter" class="test-button">Проверить кнопку: 0</button><span class="hidden-by-site">Скрытый сайтом элемент</span>
+</section></main>
+<aside id="right-ad"><small>РЕКЛАМА</small><b>Здесь мог бы быть баннер.</b><p>Выберите папки, поиск и список писем — всё остальное исчезнет.</p></aside>
+</div><footer id="page-footer">Демонстрационная страница. Все письма вымышлены. Сеть и личная почта не используются.</footer>
+<dialog id="compose-dialog"><h2>Новое письмо</h2><p>Пример диалога за пределами выбранных блоков.</p><form method="dialog"><button>Закрыть</button></form></dialog>
+<script src="demo.js"></script></body></html>
